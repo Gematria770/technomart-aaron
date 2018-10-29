@@ -1,0 +1,349 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Cuprum, PT Sans, sans-serif;
+    
+    font-size: 14px; /*размер шрифта*/
+    line-height: 24px; /*межстрачный интервал*/
+    font-weight: 400; /*400-normal, 700-bold*/
+    color: #000000; /*цвет текста*/
+
+    background-color: #ffffff; /*цвет фона*/
+}
+
+html,
+body {
+    min-width: 100%;/*1440px;*/
+    min-height: 100%; /*1925px;*/
+}
+
+a {
+    text-decoration: none; /*убираем подчерк. у ссылок*/
+    color: #000000; /*цвет текста*/
+}
+
+ul {
+    list-style: none; /*стиль маркера*/
+}
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0, 0, 0, 0);
+}
+
+.main {
+    width: 100%;
+    height: 42px;
+    background-color: #293449;
+
+    border-bottom-width: 278px; /* Толщина линии внизу */
+    border-bottom-style: solid; /* Стиль линии внизу */
+    border-bottom-color: #f3f7f8;
+}
+
+.main__topmenu {
+    height: 42px;
+    /*border: 1px solid #000000;*/
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; /*главная ось направлена слева направо*/
+}
+
+.logotop {
+    width: 220px;
+}
+
+.logo {
+    position: absolute;
+
+    display: inline;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 9px;
+    padding-top: 9px;
+
+    font-size: 24px; /*размер шрифта*/
+    line-height: 24px; /*межстрачный интервал*/
+    font-weight: 400; /*400-normal, 700-bold*/
+    text-transform: uppercase;
+    color: #ffffff; /*цвет текста*/
+
+    background-color: #ee3643;
+
+    border-bottom-width: 5px; /* Толщина линии внизу */
+    border-bottom-style: solid; /* Стиль линии внизу */
+    border-bottom-color: #b52933; /* Цвет линии внизу */
+}
+
+.logo:hover {
+    background-color: #ca2c37;
+    border-bottom-color: #9a212a;
+}
+
+.logo:focus {
+    background-color: #ba2732;
+    border-bottom-color: #8e1e26;
+}
+
+.search {    
+    width: 270px;
+}
+
+input[class="search__label"] { 
+    border: 0; /* Параметры рамки */
+    background: transparent; /* Прозрачный фон */
+    /*padding: 1px 4px; /* Поля вокруг текста */
+    color: #fff; /* Цвет текста */
+}
+
+.bookmarks,
+.basket {
+    width: 150px;
+}
+
+.search,
+.bookmarks,
+.basket {
+    padding-top: 12px;
+
+    font-size: 17px; /*размер шрифта*/
+    line-height: 18px; /*межстрачный интервал*/
+    font-weight: 400; /*400-normal, 700-bold*/
+    
+    color: #ffffff; /*цвет текста*/
+
+    cursor: pointer;
+}
+
+.search svg,
+.bookmarks svg,
+.basket svg {
+    padding-left: 17px;
+    padding-right: 15px;
+}
+
+.search svg:hover,
+.bookmarks svg:hover,
+.basket svg:hover {
+    fill: #ffffff;
+}
+
+.checkout {
+    display: inline;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+
+    font-size: 17px; /*размер шрифта*/
+    line-height: 18px; /*межстрачный интервал*/
+    font-weight: 400; /*400-normal, 700-bold*/
+    
+    color: #ffffff; /*цвет текста*/
+
+    background-color: #63a63e;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    margin-left: 53px;
+    margin-top: 54px;
+    margin-bottom: 49px;
+}
+
+.menu__text {
+    margin: 0;
+    margin-right: 70px;
+
+    font-size: 16px; /*размер шрифта*/
+    line-height: 23px; /*межстрачный интервал*/
+    font-style: italic;
+    color: #ee3643; /*цвет текста*/
+}
+
+.menu__cont {
+    margin-right: 40px;
+}
+
+.menu__phone {    
+    padding-left: 12px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border: 3px solid #fff;
+
+    font-size: 21px; /*размер шрифта*/
+    line-height: 18px; /*межстрачный интервал*/
+    font-weight: 700; /*400-normal, 700-bold*/
+    color: #ee3643;
+}
+
+.menu__phone>svg {
+    margin-top: 13px;
+    padding-right: 40px;
+}
+
+.menu__adres {
+    margin: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 10px;
+
+    font-size: 14px; /*размер шрифта*/
+    line-height: 24px; /*межстрачный интервал*/
+    font-weight: 400; /*400-normal, 700-bold*/
+    color: #32425c;
+}
+
+.enter {
+    padding-left: 14px;
+    padding-right: 27px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+    width: 80px;
+    height: 17px;
+    background-color: #fff;
+
+    font-size: 21px; /*размер шрифта*/
+    line-height: 18px; /*межстрачный интервал*/
+    font-weight: 700; /*400-normal, 700-bold*/
+    color: #000;
+}
+
+.registration {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+    width: 100px;
+    height: 17px;
+    background-color: #fff;
+
+    font-size: 21px; /*размер шрифта*/
+    line-height: 18px; /*межстрачный интервал*/
+    font-weight: 700; /*400-normal, 700-bold*/
+    color: #000;
+}
+
+.main__navigation {
+    width: 100%;
+    height: 55px;
+    background-color: #32425c;
+
+    border-bottom-width: 5px; /* Толщина линии внизу */
+    border-bottom-style: solid; /* Стиль линии внизу */
+    border-bottom-color: #293449; /* Цвет линии внизу */
+}
+
+.site__navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    padding: 19px 52px;
+}
+
+.main__navigation a{
+    font-size: 17px; /*размер шрифта*/
+    line-height: 17px; /*межстрачный интервал*/
+    font-weight: 400; /*400-normal, 700-bold*/
+    color: #ffffff;
+}
+
+.items-list {
+    /*display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;*/
+    width: 940px;
+    /*height: 420px;*/
+
+    /*border: 1px solid red;*/
+
+    padding: 0;
+}
+
+.items-list>div {
+    border: 0px dashed transparent;
+    margin-bottom: 20px;
+}
+
+.materials {
+    float: left;
+
+    width: 300px;
+    min-height: 123px;
+    
+    background-color: #ffbf47;
+}
+
+.instrument {
+    float: left;
+    
+    width: 300px;
+    min-height: 123px;
+
+    margin-left: 20px;
+
+    background-color: #3bbce3;
+}
+
+.technics {
+    float: right;
+
+    width: 300px;
+    min-height: 123px;
+
+    background-color: #dc91d8;
+}
+
+.slider {
+    float: left;
+
+    width: 620px;
+    min-height: 266px;
+
+    background-color: #b52933;
+}
+
+.discounts {
+    float: right;
+
+    width: 300px;
+    min-height: 123px;
+
+    background-color: #8ed78f;
+}
+
+.delivery {
+    float: right;
+
+    width: 300px;
+    min-height: 123px;
+
+    background-color: #ffc047;
+}
+
+.items__text {
+    margin: 0;
+
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #ffffff;
+}
