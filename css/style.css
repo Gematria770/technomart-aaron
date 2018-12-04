@@ -783,7 +783,7 @@ input::placeholder {
     background-color: #f9f5f0;
 }
 
-.products-text {
+.products-title {
     margin: 0;
     padding: 0;
 
@@ -810,5 +810,122 @@ input::placeholder {
 }
 
 .products-row li {
-    border: 1px solid red;
+    position: relative;
+    display: inline-block;
+    text-align:center;
+    
+    border: 1px solid #eaeaea;
+}
+
+.products-row li:nth-child(1)>img {
+    padding-top: 9px;
+    padding-left: 17px;
+    padding-right: 19px;
+    padding-bottom: 13px;
+}
+
+.products-row li:nth-child(2)>img {
+    padding-top: 29px;
+    padding-left: 40px;
+    padding-right: 53px;
+    padding-bottom: 42px;
+}
+
+.products-row li:nth-child(3)>img {
+    padding-top: 22px;
+    padding-left: 27px;
+    padding-right: 49px;
+    padding-bottom: 33px;
+}
+
+.products-row li:nth-child(4)>img {
+    padding-top: 29px;
+    padding-left: 32px;
+    padding-right: 61px;
+    padding-bottom: 42px;
+}
+.products-text {
+    margin: 0;
+    padding: 0;
+
+    padding-top: 13px;
+    padding-bottom: 18px;
+    padding-right: 14px;
+    padding-left: 14px;
+
+    
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #000000;
+
+    text-align: center;
+}
+
+.oldprice {
+    margin: 0;
+    padding: 0;
+
+    padding-bottom: 13px;
+
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #a9a9a9;
+    text-transform: uppercase;
+    text-decoration: line-through;
+    text-align: center;
+}
+
+.products-row li:nth-child(4)>.oldprice {
+    color: #ffffff;
+}
+
+.products-item .flag1 {
+    position: absolute; 
+    top: 0px;
+    right: 0px;
+    width: 60px;
+    height: 60px;
+
+    text-indent: -1000px;
+    overflow: hidden;
+    z-index: 20;
+}
+.products-item .flag1-new {
+    background: url("../img/new-flag.png") no-repeat 0 0;
+}
+
+.price-button {
+    position: relative;
+    display: inline-block;
+
+    width: 80px;
+
+    margin-bottom: 20px;
+
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 40px;
+    padding-left: 36px;
+
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+.price-button:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 0;
+    height: 0;
+    border: 22px solid white;
+    border-left-color: #ee3643;
+
+    cursor: pointer;
 }
